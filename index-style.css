@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap");
+body {
+  background-color: #2f2f3f;
+  font-family: "Baloo Chettan 2", sans-serif;
+}
+
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vh 4vw;
+}
+
+header .headerLogo {
+  cursor: pointer;
+  width: 90px;
+  height: 25px;
+}
+
+header button {
+  padding: 9px 25px;
+  background-color: #fff;
+  color: #1c1c29;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-size: 1.6em;
+}
+
+header .navLink {
+  list-style: none;
+}
+
+header .navLink li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header .navLink li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #d9dae9;
+  font-size: 1.6em;
+}
+
+header .navLink li a:hover {
+  color: #fff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+  position: relative;
+  padding-bottom: 14vh;
+}
+
+.container .card {
+  min-width: 10vw;
+  width: 15vw;
+  height: 25vh;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 3vw;
+}
+
+.container .card .box {
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: #242a3b;
+  border: 2px solid #1e1f23;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container .card .box:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.container .card .box:hover .content a {
+  padding: 12px 26px;
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.container .card .box .content h3 {
+  font-size: 1.8em;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .box .content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+.container .card:nth-child(2) .box .content a {
+  background: red;
+}
+
+.container .card:nth-child(3) .box .content a {
+  background: green;
+}
+
+.container .card:nth-child(4) .box .content a {
+  background: orange;
+}
+
+form {
+  width: 50vw;
+  max-width: 500px;
+  margin: auto;
+  background-image: "map1.png";
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 3vh;
+  border-radius: 15px;
+}
+
+form h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 3vh;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+}
+
+form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+form .submit {
+  background: #2f2f3f;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1.8em;
+}
+
+form .submit:hover {
+  cursor: pointer;
+  background: #323281;
+}
+
+.correcto {
+  border: 2px solid #1ed84d;
+}
+
+.incorrecto {
+  border: 2px solid #ec4c4c;
+}
+
+.false {
+  display: none;
+}
+
+.true {
+  color: white;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
+.nonSet {
+  display: none;
+}
+
+.submit.validated {
+  background: #33f04c;
+}
+
+.submit.not_validated {
+  background: #f03333;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+
+.custom-shape-divider-bottom-1627525694 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1627525694 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 73px;
+}
+
+.custom-shape-divider-bottom-1627525694 .shape-fill {
+  fill: #DFE0E7;
+}
+
+.section2 {
+  background: #DFE0E7;
+  margin-top: -2.5vh;
+}
+/*# sourceMappingURL=index-style.css.map */

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consultora BAG</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> -- https://fonts.google.com/ -->
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="index-style.css" rel="stylesheet" />
+    <script src="../js/formulario.js"></script>
+    <script src="../js/sendMail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+</head>
+
+<body>
+    <header>
+        <img class="headerLogo" src="../img/logo-test.png" alt="logo">
+        <nav>
+            <ul class="navLink">
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+        <a class="headerButton" href="contacto.html"><button>Contacto</button></a>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <!--<h2>01</h2>  numero de fondo de la card -->
+                    <h3>Servicio 1</h3>
+                    <p>
+                        Descripcion del servicio uno, chamuyo mal.
+                        Asi un par de renglone
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h3>Servicio 2</h3>
+                    <p>
+                        Descripcion del servicio dos, chamuyo mal.
+                        Asi un par de renglone
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h3>Servicio 3</h3>
+                    <p>
+                        Descripcion del servicio tres, chamuyo mal.
+                        Asi un par de renglone
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h3>Servicio 4</h3>
+                    <p>
+                        Descripcion del servicio cuatro, chamuyo mal.
+                        Asi un par de renglone
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1627525694">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="section2">
+        <form action="" id="formulario">
+            <h2>Envíanos tu consulta</h2>
+            <input type="text" name="nombre" class="nombre" placeholder="Nombre" required="required" maxlength="50">
+            <div class="error_nombre false">Su nombre no puede contener números</div>
+            <input type="text" name="mail" class="mail" placeholder="Mail" required="required">
+            <div class="error_mail false">El mail no tiene el formato correcto</div>
+            <input type="text" name="telefono" class="telefono" placeholder="Telefono" maxlength="14">
+            <div class="error_telefono false">El teléfono no puede contener letras</div>
+            <textarea name="mensaje" placeholder="Escriba aqui su consulta" required="required" maxlength="700"></textarea>
+            <input type="button" value="Enviar" class="submit" onclick="sendEmail()">
+        </form>
+    </div>
+    <script src="../js/formulario.js"></script>
+    <script src="../js/sendMail.js"></script>
+</body>
+</html>
