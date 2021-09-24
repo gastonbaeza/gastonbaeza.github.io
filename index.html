@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Consultora BAG</title>
+    <title>Consultora</title>
     <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> -- https://fonts.google.com/ -->
     <link href="normalize.css" rel="stylesheet" />
     <link href="index-style.css" rel="stylesheet" />
-    <script src="../js/formulario.js"></script>
-    <script src="../js/sendMail.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
 </head>
 
 <body>
@@ -84,19 +81,7 @@
         </div>
     </div>
     <div class="section2">
-        <form action="" id="formulario">
-            <h2>Envíanos tu consulta</h2>
-            <input type="text" name="nombre" class="nombre" placeholder="Nombre" required="required" maxlength="50">
-            <div class="error_nombre false">Su nombre no puede contener números</div>
-            <input type="text" name="mail" class="mail" placeholder="Mail" required="required">
-            <div class="error_mail false">El mail no tiene el formato correcto</div>
-            <input type="text" name="telefono" class="telefono" placeholder="Telefono" maxlength="14">
-            <div class="error_telefono false">El teléfono no puede contener letras</div>
-            <textarea name="mensaje" placeholder="Escriba aqui su consulta" required="required" maxlength="700"></textarea>
-            <input type="button" value="Enviar" class="submit" onclick="sendEmail()">
-        </form>
+
     </div>
-    <script src="../js/formulario.js"></script>
-    <script src="../js/sendMail.js"></script>
 </body>
 </html>
