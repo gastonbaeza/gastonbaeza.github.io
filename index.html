@@ -9,21 +9,20 @@
     <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> -- https://fonts.google.com/ -->
     <link href="normalize.css" rel="stylesheet" />
     <link href="index-style.css" rel="stylesheet" />
-    <script src="../js/formulario.js"></script>
-    <script src="../js/sendMail.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="../gastonbaeza.github.io/js/main.js"></script>
+    <script src="../gastonbaeza.github.io/js/formulario.js"></script>
 </head>
 <body>
     <header>
         <img class="headerLogo" src="img/logo-test.png" alt="logo">
         <nav>
             <ul class="navLink">
-                <li><a href="#">Servicios</a></li>
+                <li><a href="#cards">Servicios</a></li>
                 <li><a href="#">Experiencia</a></li>
                 <li><a href="#">Nosotros</a></li>
             </ul>
         </nav>
-        <a class="headerButton" href="contacto.html"><button>Contacto</button></a>
+        <a class="headerButton" href="#contacto"><button>Contacto</button></a>
     </header>
     <div class="portada">
         <img class="intro-photo" src="img/index-big.jpg" alt="index-big">
@@ -37,7 +36,7 @@
                 Lorem ipsum, dolor sit amet c.
             </p>
         </div>
-        <div class="divider-main-bottom">
+        <div class="divider-main-bottom"  id="cards">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
                 <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
@@ -55,8 +54,8 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptates, dolore mollitia
                         numquam natus
                     </p>
-                    <a href="#">Leer mas</a>
                 </div>
+                <a class="card-link" href="#">Leer mas</a>
             </div>
         </div>
         <div class="card">
@@ -66,8 +65,8 @@
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptates.
                     </p>
-                    <a href="#">Leer mas</a>
                 </div>
+                <a class="card-link" href="#">Leer mas</a>
             </div>
         </div>
         <div class="card">
@@ -78,8 +77,8 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptates, dolore mollitia
                         numquam natus ut cupiditate.
                     </p>
-                    <a href="#">Leer mas</a>
                 </div>
+                <a class="card-link" href="#">Leer mas</a>
             </div>
         </div>
         <div class="card">
@@ -88,13 +87,13 @@
                     <h3>Servicio 4</h3>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptates, dolore mollitia
-                        numquam natus, consequuntur enim neque sequi nostrum animi.
+                        numquam natus.
                     </p>
-                    <a href="#">Leer mas</a>
                 </div>
+                <a class="card-link" href="#">Leer mas</a>
             </div>
         </div>
-        <div class="custom-shape-divider-bottom-1627525694">
+        <div class="divider-cards-bottom">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
                 <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
@@ -102,13 +101,13 @@
             </svg>
         </div>
     </div>
-    <div class="contacto">
-        <h2>Envíanos tu consulta</h2>
+    <div class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
     </div>
     <div class="contact-options">
         <div class="wpp">
             <h2 class="contact-title">A través de Whatsapp:</h2>
-            <div>
+            <div class="wpp-content">
                 <img class="wpp-logo" src="img/whatsapp.png" alt="wpp-logo">
                 <a class="wpp-button" href="https://wa.me/541132857248" target="_blank">Enviar Mensaje</a>
             </div>
@@ -125,7 +124,5 @@
             <input type="button" value="Enviar consulta" class="submit" onclick="sendEmail()">
         </form>
     </div>
-    <script src="../js/formulario.js"></script>
-    <script src="../js/sendMail.js"></script>
 </body>
 </html>
