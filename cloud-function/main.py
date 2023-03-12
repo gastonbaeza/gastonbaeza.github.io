@@ -11,7 +11,7 @@ def main(request):
         html_content='<strong>and easy to do anywhere, even with Pythonqqqqqq</strong>')
     try:
         #sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
-        sg = SendGridAPIClient('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')
+        sg = SendGridAPIClient('api-key')
         response = sg.send(message)
         print(response.status_code)
         print(response.body)
