@@ -302,8 +302,14 @@
 
   .contact-options {
     position: absolute;
-    top: 168%;
+    top: 163%;
     width: 100%;
+    transform: skew(0, 2deg);
+    padding-top: 4vh;
+    z-index: 9;
+  }
+
+  .divider-contact-options {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -320,6 +326,8 @@
         -ms-flex-align: start;
             align-items:start;
     background: #DFE0E7;
+    transform: skew(0, -2deg);
+    padding-bottom: 5vh;
   }
 
   .wpp {
@@ -459,13 +467,6 @@
     background: #f03333;
   }
 
-  .diagonal-divider-1{
-    position: absolute;
-    top: 220%;
-    border-top: 50px solid #DFE0E7;
-    border-left: 100vw solid rgb(255, 255, 255);
- }
-
   .certificate {
     height: 100px;
     width: 100px;
@@ -473,9 +474,17 @@
 
   .experience {
     position: absolute;
-    top: 229%;
+    top: 215%;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    transform: skew(0, 2deg);
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    z-index: 10;
+  }
+
+  .divider1 {
+    transform: skew(0, -2deg);
   }
 
   .experience h3 {
@@ -500,13 +509,25 @@
     width: 50%;
   }
 
+  .separator-contact {
+    height: 7vh;
+    width: 100%;
+    transform: skew(0, -2deg);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 238%;
+    z-index: 11;
+  }
+
   .footer {
     background-color: #000;
     position: absolute;
-    top: 260%;
-    width: 100%;
+    top: 240%;
+    width: 98%;
     color: #e9e9e9;
     padding-left: 2vw;
+    padding-top: 10vh;
+    z-index: 9;
   }
 
   #topBtn {
@@ -514,7 +535,7 @@
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
-    z-index: 5; /* Make sure it does not overlap */
+    z-index: 55; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: #455184; /* Set a background color */
