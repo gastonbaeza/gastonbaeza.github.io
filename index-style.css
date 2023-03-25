@@ -58,10 +58,6 @@
     font-size: 18px;
   }
 
-  header button:hover {
-    background-color: #455184;
-    color: #ffffff;
-  }
 
   .header-on-scroll button {
     font-size: 18px;
@@ -139,7 +135,7 @@
             transform: rotate(180deg);
   }
 
-  .divider-main-bottom svg {
+  /*.divider-main-bottom svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -148,8 +144,8 @@
 
   .divider-main-bottom .shape-fill {
     fill: rgb(98, 103, 144);
-    /*fill: rgb(98, 103, 144);*/
   }
+  */
 
   .cards {
     display: -webkit-box;
@@ -171,7 +167,7 @@
     top: 100%;
     width: 100%;
     background-color: rgb(94, 96, 121);
-    height: 59%;
+    height: 58%;
     padding-top: 5vh;
     border-top: 2px solid #414359;
   }
@@ -179,7 +175,7 @@
   .cards .card {
     min-width: 10vw;
     width: 15vw;
-    height: 32vh;
+    height: 30vh;
     -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
             box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
     border-radius: 15px;
@@ -293,13 +289,13 @@
   }
 
   .divider-cards-bottom .shape-fill {
-    fill: #DFE0E7;
+    fill: #f2f3f8;
   }
 
   .contacto {
-    background: #DFE0E7;
+    background: #f2f3f8;
     position: absolute;
-    top: 162%;
+    top: 163%;
     width: 100%;
     height: 7%;
     padding-top: 5vh;
@@ -322,7 +318,7 @@
 
   .divider-contact-options {
     display: flex;
-    background: #DFE0E7;
+    background: #f2f3f8;
     transform: skew(0, -2deg);
     padding-bottom: 7vh;
     justify-content: center;
@@ -366,7 +362,7 @@
     line-height: 59px;
     padding: 2px 3% 2px 3%;
     background-color: #075E54;
-    color: #eeeeee;
+    color: #f5f3f3;
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -427,7 +423,7 @@
 
   form textarea {
     min-height: 100px;
-    max-height: 200px;
+    max-height: 150px;
     max-width: 100%;
     min-width: 100%;
   }
@@ -484,24 +480,13 @@
     position: absolute;
     top: 221%;
     background-color: rgb(255, 255, 255);
-    transform: skew(0, 2deg);
     padding-top: 4vh;
     padding-bottom: 11vh;
     z-index: 10;
   }
 
-  .divider1 {
-    transform: skew(0, -2deg);
-    left: 0;
-    width: 60%;
-  }
-
-  .divider1 h3{
-    text-align: center;
-  }
-
   .experience h3 {
-    z-index: 3;
+    text-align: center;
   }
 
   .experience-content {
@@ -518,32 +503,44 @@
     width: 50%;
   }
 
-  .separator-contact {
-    height: 35vh;
+  .services {
+    height: 70vh;
     width: 100%;
-    background-color: rgb(66, 66, 74);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 260%;
     z-index: 11;
   }
 
-  .pre-footer {
-    background-color: rgb(66, 66, 74);
-    position: absolute;
-    top: 291%;
-    width: 100%;
-    height: 7vh;
-    z-index: 12;
+  .services h1 {
+    color: #484352;
+    font-size: 20px;
+  }
+
+  .services-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .service-1, .service-2, .service-3, .service-4 {
+    width: 25vw;
+    height: 30%;
+    margin: 2%;
+    text-align: center;
   }
 
   .footer {
     background-color: #000;
     position: absolute;
-    top: 288.5%;
+    top: 330%;
     width: 98%;
+    height: 5%;
     color: #e9e9e9;
     padding-left: 2vw;
-    padding-top: 10vh;
     z-index: 9;
   }
 

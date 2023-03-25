@@ -1,0 +1,10 @@
+/* Heigths
+    - header-on-scroll 6%
+    - portada 100%
+    - cards
+        top: 100%;
+        height: 58%;
+    - contacto (Contáctanos) 163%;
+    - contact-options 170%
+    - experience 221%
+    - service-1 260%
