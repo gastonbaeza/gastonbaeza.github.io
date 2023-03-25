@@ -10,7 +10,6 @@
     <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> -- https://fonts.google.com/ -->
     <link href="normalize.css" rel="stylesheet" />
     <link href="index-style.css" rel="stylesheet" />
-    <script src="../gastonbaeza.github.io/js/formulario.js"></script>
 </head>
 
 <body>
@@ -26,7 +25,7 @@
         <a class="headerButton" href="#contacto"><button>Contacto</button></a>
     </header>
     <div class="portada">
-        <img class="intro-photo" src="img/index-big.jpg" alt="index-big">
+        <img class="intro-photo" src="img/fondo-2.jpg" alt="index-big">
         <div class="intro-text">
             <h3>Proteja sus derechos con nuestro equipo de abogados.</h3>
             <p>
@@ -37,7 +36,7 @@
                 Contáctenos para agendar una consulta.
             </p>
         </div>
-        <div class="divider-main-bottom" id="cards">
+        <!--<div class="divider-main-bottom" id="cards">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
@@ -50,7 +49,7 @@
                     d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
                     class="shape-fill"></path>
             </svg>
-        </div>
+        </div>-->
     </div>
     <div class="cards">
         <div class="card">
@@ -63,7 +62,7 @@
                         numquam natus
                     </p>
                 </div>
-                <a class="card-link" href="#">Leer mas</a>
+                <a class="card-link" href="#">Leer más</a>
             </div>
         </div>
         <div class="card">
@@ -74,7 +73,7 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptates.
                     </p>
                 </div>
-                <a class="card-link" href="#">Leer mas</a>
+                <a class="card-link" href="#">Leer más</a>
             </div>
         </div>
         <div class="card">
@@ -86,7 +85,7 @@
                         numquam natus ut cupiditate.
                     </p>
                 </div>
-                <a class="card-link" href="#">Leer mas</a>
+                <a class="card-link" href="#">Leer más</a>
             </div>
         </div>
         <div class="card">
@@ -98,7 +97,7 @@
                         numquam natus.
                     </p>
                 </div>
-                <a class="card-link" href="#">Leer mas</a>
+                <a class="card-link" href="#">Leer más</a>
             </div>
         </div>
         <div class="divider-cards-bottom">
@@ -127,14 +126,20 @@
                     <img class="wpp-logo" src="img/whatsapp.png" alt="wpp-logo">
                     <a class="wpp-button" href="https://wa.me/541132857248" target="_blank">Enviar Mensaje</a>
                 </div>
+                <h2 class="contact-title">Visita nuestras redes sociales:</h2>
+                <div  class="redes">
+                    <a href="https://www.instagram.com/gasbaeza" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/gasbaeza" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/in/gasbaeza" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+                </div>
             </div>
             <form action="" id="formulario">
                 <h2 class="contact-title">O déjanos tu consulta y te contactaremos:</h2>
-                <input type="text" name="nombre" class="nombre" placeholder="Nombre" required="required" maxlength="50">
+                <input type="text" name="nombre" class="nombre" placeholder="Nombre Completo" required="required" maxlength="50">
                 <div class="error_nombre false">Su nombre no puede contener números</div>
                 <input type="text" name="mail" class="mail" placeholder="Mail" required="required">
                 <div class="error_mail false">El mail no tiene el formato correcto</div>
-                <input type="text" name="telefono" class="telefono" placeholder="Telefono" maxlength="14">
+                <input type="text" name="telefono" class="telefono" placeholder="Teléfono" maxlength="14">
                 <div class="error_telefono false">El teléfono no puede contener letras</div>
                 <textarea name="mensaje" placeholder="Escriba aqui su consulta" required="required"
                     maxlength="700"></textarea>
@@ -146,7 +151,7 @@
         <div class="divider1">
             <h3>Trayecto y Experiencia</h3>
             <div class="experience-content">
-                <img class="certificate" src="img/certificate.png" alt="certificate">
+                <img class="certificate" src="img/cert.jpg" alt="certificate">
                 <p>
                     Con más de [número de años] años de experiencia en el campo del derecho, nuestro equipo de abogados
                     ha manejado una amplia variedad de casos complejos y ha obtenido resultados exitosos
@@ -158,11 +163,12 @@
         </div>
     </div>
     <div class="separator-contact"></div>
+    <div class="pre-footer"></div>
     <div class="footer">
         <p>Powered by @gasbaeza</p>
     </div>
     <button onclick="topFunction()" id="topBtn">↑</button>
 </body>
 <script src="../gastonbaeza.github.io/js/main.js"></script>
-
+<script src="../gastonbaeza.github.io/js/formulario.js"></script>
 </html>
