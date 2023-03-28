@@ -8,6 +8,10 @@
     margin: 0;
   }
 
+  * {
+    color-scheme: light only;
+  }
+
 @media (min-width:320px) {
 
   header {
