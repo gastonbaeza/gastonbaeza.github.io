@@ -49,24 +49,28 @@
   }
 
   header button {
-    padding: 9px 25px;
-    color: #ffffff;
+    padding: 7px 10px;
+    margin-right: 4vw;
+    background-color: #fff;
+    color: #1c1c29;
     border: none;
-    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
   .header-on-scroll button {
-    font-size: 18px;
+    font-size: 16px;
     color: #dbdbdb;
     background-color: transparent;
   }
 
   header .navLink {
     list-style: none;
+    margin-left: 15px;
   }
 
   header .navLink li {
@@ -79,7 +83,7 @@
     transition: all 0.3s ease 0s;
     text-decoration: none;
     color: #cacad8;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .header-on-scroll .navLink li a {
@@ -119,29 +123,6 @@
   .intro-text h3 {
     color: #d3d0d6;
   }
-
-  /*.divider-main-bottom {
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  .divider-main-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 73px;
-  }
-
-  .divider-main-bottom .shape-fill {
-    fill: rgb(98, 103, 144);
-  }
-  */
 
   .cards {
     display: -webkit-box;
@@ -195,13 +176,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .cards .card .box:hover {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-    -webkit-box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
   }
 
   .cards .card .box .content {
@@ -284,24 +258,23 @@
 
   .contact-options {
     position: absolute;
-    top: 170%;
+    top: 103%;
     width: 100%;
-    transform: skew(0, 2deg);
     padding-top: 4vh;
     z-index: 9;
   }
 
   .divider-contact-options {
     display: flex;
+    flex-wrap: wrap;
     background: #f2f3f8;
-    transform: skew(0, -2deg);
     padding-bottom: 7vh;
     justify-content: center;
   }
 
   .wpp {
     position: relative;
-    width: 35%;
+    width: 45%;
     margin-right: 0%;
     align-items: center;
   }
@@ -327,15 +300,15 @@
   }
 
   .wpp-logo {
-    height: 65px;
-    width: 65px;
+    height: 30px;
+    width: 30px;
     margin-right: 1%;
   }
 
   .wpp-button {
-    height: 59px;
-    line-height: 59px;
-    padding: 2px 3% 2px 3%;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 7% 2px 7%;
     background-color: #075E54;
     color: #f5f3f3;
     border: none;
@@ -343,7 +316,7 @@
     cursor: pointer;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
   }
 
@@ -356,14 +329,14 @@
     display: flex;
     align-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
   }
 
   .redes img {
-    height: 65px;
-    width: 65px;
+    height: 30px;
+    width: 30px;
     padding: 6px;
   }
 
@@ -372,13 +345,14 @@
     width: 35%;
     max-width: 500px;
     border-radius: 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .contact-title {
     color: #656161;
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 3vh;
+    font-size: 12px;
+    margin-bottom: 1.5vh;
   }
 
   form input,
@@ -408,9 +382,9 @@
   form .submit {
     background: #404040;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   form .submit:hover {
@@ -449,22 +423,22 @@
   }
 
   .certificate {
-    height: 250px;
-    width: 250px;
+    height: 120px;
+    width: 120px;
   }
 
   .experience {
     position: absolute;
-    top: 221%;
+    top: 165%;
     background-color: rgb(255, 255, 255);
-    padding-top: 4vh;
-    padding-bottom: 15vh;
+    padding-top: 2vh;
+    padding-bottom: 10vh;
     z-index: 10;
   }
 
   .experience h3 {
     text-align: center;
-    font-size: 22px;
+    font-size: 14px;
   }
 
   .experience-content {
@@ -478,7 +452,8 @@
   }
 
   .experience-content p {
-    width: 40%;
+    width: 55%;
+    font-size: 12px;
   }
 
   .experience-content .certificate {
@@ -490,24 +465,25 @@
     width: 100%;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 265%;
+    top: 221%;
     z-index: 11;
   }
 
   .services h1 {
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .services p {
     padding: 5%;
+    font-size: 12px;
     text-shadow: rgb(0, 0, 0) 2px 0 4px;
   }
 
   .services-flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
@@ -519,7 +495,7 @@
   .service-3,
   .service-4 {
     width: auto;
-    height: 100%;
+    height: 55%;
     text-align: center;
     color: white;
     padding: 20px;
@@ -547,12 +523,12 @@
   .footer {
     background-color: #000;
     position: absolute;
-    top: 319%;
+    top: 290%;
     width: 98%;
     height: 5%;
     color: #e9e9e9;
     padding-left: 2vw;
-    z-index: 9;
+    z-index: 20;
   }
 
   #topBtn {
