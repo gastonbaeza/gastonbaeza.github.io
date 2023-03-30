@@ -7,8 +7,14 @@ window.onscroll = function() {
     } else {
       document.getElementsByTagName("header")[0].classList.remove("header-on-scroll");
     }
-  } else {
+  } else if (window.innerWidth > 400){
     if (window.scrollY > 350) {
+      document.getElementsByTagName("header")[0].classList.add("header-on-scroll");
+    } else {
+      document.getElementsByTagName("header")[0].classList.remove("header-on-scroll");
+    }
+  } else {
+    if (window.scrollY > 200) {
       document.getElementsByTagName("header")[0].classList.add("header-on-scroll");
     } else {
       document.getElementsByTagName("header")[0].classList.remove("header-on-scroll");
